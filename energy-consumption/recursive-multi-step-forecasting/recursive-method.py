@@ -157,12 +157,18 @@ print("----------Reservoir recursive starts----------")
 recursive(day, train_data, data)
 print("----------Reservoir recursive ends----------")
 print("----------Ridge recursive starts----------")
+data =  d.filter(['DAYTON_MW'])
+data = data[:1900]
 ridge_recursive(day, train_data, data)
 print("----------Ridge recursive ends----------")
 print("----------KNN recursive starts----------")
+data =  d.filter(['DAYTON_MW'])
+data = data[:1900]
 knn_recursive(day, train_data, data)
 print("----------KNN recursive ends----------")
 print("----------Decision Tree recursive starts----------")
+data =  d.filter(['DAYTON_MW'])
+data = data[:1900]
 dt_recursive(day, train_data, data)
 print("----------Decision Tree recursive ends----------")
 
